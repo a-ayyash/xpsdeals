@@ -1,0 +1,21 @@
+sudo: required
+dist: trusty
+group: deprecated-2017Q4
+language: csharp
+solution: ExpediaInterview.sln
+mono: none
+dotnet: 2.1.2
+script:
+- dotnet restore
+- cd ExpediaInterviewUnitTests
+- dotnet test
+deploy:
+  provider: heroku
+  buildpack: "https://github.com/jincod/dotnetcore-buildpack"
+  api_key:
+    secure: LnSzto4YLwISw6u3YLrqjdy8hvsg+G05x8xQMKP2MhQFDgoFjifnzPxojbhDujLGL6cmai06Ps9jNMS0b3j5EU4PZyHZk3c9cE49z1lg+UlD5uNgcmzvcp9XIpgzMhltB0RG+I7nH62rSxRfQl/hI61IvRSfH12VLOJ36G1YVXYvv7p8wK3MXRJQ3Tnf2OqknUPotReQs7W7NhH77hQl5J0R6BcgDtQGQcQk55gKk8DiL42mnVStaESUnYJS5jwRVI1NUDJYdzLjzvv4+JRejdzTF86JcbBcffRvqISmEWyXOr2vjdwoV9S3CeCVyIy5CkY9UpKabCrSGS7YhJ2bcGnQm8Y7Ig18Gkr4gvyATjLrDVF1QOLbUzdZMje/S5G5T7YKGU+EJDfV+WqL591Dh99UzZIQYI4NI7rE3l5VQtqdFwRADSHWlAUVG8H4VGHNYE/b0jSd/s6fkxGd7/HAWUo2krr9JaOwPz4b5GOZgKEW8mr2GFiuilMAZ8s2v7mTIZqtrntFEe5x10BT3OwcH1j1VH6wL8xPrrIVXkJK+kqJE10k7p+o1LQ2BcgtawE3xOWwyeLJPyRdn0ozFNTLT9gxBgdBPQr9cREoRXVFuTLfXUyd3IM5X04hWzo4EUz+Z+U2hOGWNVk2qMicKYjyNRZBpKxZH2NrnFxKvWPCV0Y=
+  app: xpdealsfinder
+  strategy: git
+  skip_cleanup: true
+  on:
+    repo: a-ayyash/xpdealfinder

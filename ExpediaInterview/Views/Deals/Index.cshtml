@@ -1,0 +1,105 @@
+﻿@model ExpediaInterview.ViewModel.QueryParametersViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    var deal = (ExpediaInterview.Models.Deal)ViewData["deal"];
+}
+
+
+
+
+<div asp-validation-summary="All"></div>
+<form asp-controller="Deals" asp-action="RequestDeals" method="post">
+    Scenario:        <input asp-for="scenario" /> <br />
+    Page:            <input asp-for="page" /> <br />
+    UserID:          <input asp-for="uid" /> <br />
+    Prodcut Type:    <input asp-for="productType" /> <br />
+    <button type="submit">Get Deals</button>
+</form>
+
+@if (deal.IsValidDeal())
+{
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#offerdetails">Offer Details</button>
+<div id="offerdetails" class="collapse">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Site ID</th>
+                <th>Language</th>
+                <th>Currency</th>
+                <th>User Selected Currency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @deal.OfferDetails.SiteID
+                </td>
+                <td>
+                    @deal.OfferDetails.Language
+                </td>
+                <td>
+                    @deal.OfferDetails.Currency
+                </td>
+                <td>
+                    @deal.OfferDetails.UserSelectedCurrency
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br />
+<br />
+<br />
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#userdetails">User Details</button>
+<div id="userdetails" class="collapse">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Persona Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @deal.User.UserID
+                </td>
+                <td>
+                    @deal.User.Persona.PersonaType
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br />
+<br />
+<br />
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#offers">Offers</button>
+<div id="offers" class="collapse"> 
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#hotels">Hotels</button>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#flights">Flights</button>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#packages">Packages</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Persona Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @deal.User.UserID
+                </td>
+                <td>
+                    @deal.User.Persona.PersonaType
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+}
+else {
+<p> INVALID DEAL </p>
+}

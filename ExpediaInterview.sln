@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpediaInterview", "ExpediaInterview\ExpediaInterview.csproj", "{1349BF70-69A5-4E6D-9AE7-C951A751701C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpediaInterviewUnitTests", "ExpediaInterviewUnitTests\ExpediaInterviewUnitTests.csproj", "{63DB7560-4D0B-47CB-83A1-EE4EB2F0CE6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1349BF70-69A5-4E6D-9AE7-C951A751701C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1349BF70-69A5-4E6D-9AE7-C951A751701C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1349BF70-69A5-4E6D-9AE7-C951A751701C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1349BF70-69A5-4E6D-9AE7-C951A751701C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63DB7560-4D0B-47CB-83A1-EE4EB2F0CE6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DB7560-4D0B-47CB-83A1-EE4EB2F0CE6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DB7560-4D0B-47CB-83A1-EE4EB2F0CE6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DB7560-4D0B-47CB-83A1-EE4EB2F0CE6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27E927CD-A3E6-47D3-9C90-DFA0256B9007}
+	EndGlobalSection
+EndGlobal
