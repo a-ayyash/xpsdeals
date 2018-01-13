@@ -45,6 +45,8 @@ namespace ExpediaInterview.ViewModel
 
     public class QueryParametersViewModel
     {
+        private const string FLOATING_POINT_PATTERN = @"(^&)|([0-9])(\.[0-9])?";
+
         [Required]
         [StringLength(60, MinimumLength = 3)]
         public string Scenario { get; set; }
@@ -78,26 +80,32 @@ namespace ExpediaInterview.ViewModel
         public string LengthOfStay { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Minimum Star Rating")]
         public string MinStarRating { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Max Star Rating")]
         public string MaxStarRating { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Min Guest Rating")]
         public string MinGuestRating { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Max Guest Rating")]
         public string MaxGuestRating { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Min Total Rating")]
         public string MinTotalRate { get; set; }
 
         [Range(0.0, 5.0, ErrorMessage = "Rating must be a number betweein 0.0 and 5.0")]
+        [RegularExpression(FLOATING_POINT_PATTERN, ErrorMessage = "Rating has only one decimal place")]
         [Display(Name = "Max Total Rating")]
         public string MaxTotalRate { get; set; }
 

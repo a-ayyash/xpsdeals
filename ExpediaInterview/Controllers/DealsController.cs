@@ -39,11 +39,6 @@ namespace ExpediaInterview.Controllers
             return View(viewModel);
         }
 
-        public IActionResult About()
-        {
-            return View();
-        }
-
         public IActionResult Contact()
         {
             return View();
