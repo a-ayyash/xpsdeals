@@ -16,7 +16,7 @@ namespace ExpediaInterview.REST
         {
             if (String.IsNullOrEmpty(content))
             {
-                throw new InvalidDataException("JSON string can't be empty nor null");
+                return Deal.InvalidDeal();
             }
 
             return JsonConvert.DeserializeObject<Deal>(content);

@@ -16,13 +16,12 @@ namespace ExpediaInterview.REST
             {
                 baseURL += p.Key + "=" + p.Value + "&";
             }
-            return baseURL;
+            return baseURL.TrimEnd('&');
         }
 
         public static string GenerateDefaultURL()
         {
-            //return "https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo&productType=Hotel";
-            return "https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo&productType=none";
+            return "https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo";
         }
     }
 }

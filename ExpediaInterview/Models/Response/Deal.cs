@@ -18,6 +18,11 @@ namespace ExpediaInterview.Models
         [DataMember(Name = "offers")]
         public Offers OfferCollections { get; set; }
 
+        internal static Deal InvalidDeal()
+        {
+            return new Deal();
+        }
+
         public bool IsValidDeal()
         {
             return OfferDetails != null && User != null && OfferCollections != null;

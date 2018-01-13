@@ -22,24 +22,27 @@ namespace ExpediaInterview.Models.Response.Package
         public OfferDestination Origin { get; set; }
 
         [DataMember(Name = "hotelInfo")]
-        public HotelInfo HotelInfo { get; set; }
+        public HotelInfo Hotel { get; set; }
 
         [DataMember(Name = "hotelPricingInfo")]
-        public HotelPricingInfoForPackage HotelPricingInfo { get; set; }
+        public HotelPricingInfoForPackage HotelPricing { get; set; }
 
         [DataMember(Name = "flightInfo")]
         public FlightInfoBase Flight { get; set; }
 
         [DataMember(Name = "flightPricingInfo")]
-        public FlightPricingInfo FlightPricingInfo { get; set; }
+        public FlightPricingInfo FlightPricing { get; set; }
 
         [DataMember(Name = "packageInfo")]
-        public PackageInfo PackageInfo { get; set; }
+        public PackageInfo Package { get; set; }
 
         [DataMember(Name = "packagePricingInfo")]
-        public PackagePricingInfo PackagePricingInfo { get; set; }
+        public PackagePricingInfo PackagePricing { get; set; }
 
         [DataMember(Name = "packageUrls")]
         public PackageUrls URLs { get; set; }
+
+        [DataMember(Name = "hotelUrgencyInfo")]
+        public HotelUrgencyInfo HotelUrgency { get; set; }
     }
 }

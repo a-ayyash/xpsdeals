@@ -22,8 +22,13 @@ namespace ExpediaInterview.REST
             var client = new HttpClient();
 
             var response = client.GetAsync(url).Result;
-            var rawContent = response.Content;
-            var content = rawContent.ReadAsStringAsync().Result;
+            var content = "";
+
+            if (response.IsSuccessStatusCode)
+            {
+                var rawContent = response.Content;
+                content = rawContent.ReadAsStringAsync().Result;
+            }
             
             return content;
         }

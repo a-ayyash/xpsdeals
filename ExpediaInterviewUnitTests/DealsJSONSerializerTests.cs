@@ -21,10 +21,10 @@ namespace ExpediaInterviewUnitTests
         }
 
         [TestMethod]
-        public void TestExceptionOnEmptyContent()
+        public void TestInavlidDealOnEmptyContent()
         {
             DealsJSONSerializer s = new DealsJSONSerializer();
-            Assert.ThrowsException<InvalidDataException>(() => s.ReadDealFromJSON(""));
+            Assert.IsFalse(s.ReadDealFromJSON("").IsValidDeal());
         }
 
         [TestMethod]

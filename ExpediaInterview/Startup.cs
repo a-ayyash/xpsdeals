@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,7 +36,6 @@ namespace ExpediaInterview
                     name: "default",
                     template: "{controller=Deals}/{action=Index}/{id?}");
             });
-
         }
     }
 }

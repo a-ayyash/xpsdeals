@@ -16,12 +16,13 @@ namespace ExpediaInterview.Controllers
         // GET: /<controller>/
         public IActionResult Index(string url)
         {
-            if (string.IsNullOrEmpty(url))
+            if (!string.IsNullOrEmpty(url))
             {
-                url = TargetURL.GenerateDefaultURL();
+                ViewData["deal"] = RequestManager.GetDeal(url);
             }
 
-            ViewData["deal"] = RequestManager.GetDeal(url);
+            ViewData["defaultParams"] = QueryParametersViewModel.GetDefaults();
+
 
             return View();
         }
