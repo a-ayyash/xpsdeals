@@ -10,14 +10,9 @@ using System.Threading.Tasks;
 
 namespace ExpediaInterview.REST
 {
-    public interface IRESTable
+    public class RESTOperator
     {
-        string GETContent(string url);
-    }
-
-    public class RESTOperator : IRESTable
-    {
-        public string GETContent(string url)
+        public static string GETContent(string url)
         {
             var client = new HttpClient();
 

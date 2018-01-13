@@ -8,27 +8,27 @@ namespace ExpediaInterview.Models.Response.Package
     public class PackagePricingInfo
     {
         [DataMember(Name = "perPsgrPackagePrice")]
-        public double PerPsgrPackagePrice { get; set; }
+        public double? PerPsgrPackagePrice { get; set; } = null;
 
         [DataMember(Name = "totalPackagePrice")]
-        public double TotalPackagePrice { get; set; }
+        public double? TotalPackagePrice { get; set; } = null;
 
         [DataMember(Name = "perPsgrSavings")]
-        public double PerPsgrSavings { get; set; }
+        public double? PerPsgrSavings { get; set; } = null;
 
         [DataMember(Name = "totalSavings")]
-        public double TotalSavings { get; set; }
+        public double? TotalSavings { get; set; } = null;
 
         [DataMember(Name = "currencyCode")]
         public string Currency { get; set; }
 
         [DataMember(Name = "percentSavings")]
-        public double PercentSavings { get; set; }
+        public double? PercentSavings { get; set; } = null;
 
         [DataMember(Name = "savingsPctOfHotel")]
-        public double SavingsPctOfHotel { get; set; }
+        public double? SavingsPctOfHotel { get; set; } = null;
 
         [DataMember(Name = "savingsPctOfFlight")]
-        public double SavingsPctOfFlight { get; set; }
+        public double? SavingsPctOfFlight { get; set; } = null;
     }
 }

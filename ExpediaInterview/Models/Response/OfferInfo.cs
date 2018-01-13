@@ -9,7 +9,7 @@ namespace ExpediaInterview
     public class OfferInfo
     {
         [DataMember(Name = "siteID")]
-        public int SiteID { get; set; }
+        public int? SiteID { get; set; } = null;
         
         [DataMember(Name = "language")]
         public string Language { get; set; }

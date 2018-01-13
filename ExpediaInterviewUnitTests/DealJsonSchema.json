@@ -1,0 +1,1022 @@
+﻿{
+  "definitions": {
+    "FlightDeepLink": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "flightSearchUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "FlightDestination": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "metrocode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rank": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "regionId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "longName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "province": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tla": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "FlightDetails": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "offerDateRange": {
+          "$ref": "#/definitions/OfferDateRange"
+        },
+        "destination": {
+          "$ref": "#/definitions/FlightDestination"
+        },
+        "origin": {
+          "$ref": "#/definitions/OfferDestination"
+        },
+        "flightUrls": {
+          "$ref": "#/definitions/FlightDeepLink"
+        },
+        "flightPricingInfo": {
+          "$ref": "#/definitions/FlightPricingInfo"
+        },
+        "flightInfo": {
+          "$ref": "#/definitions/FlightInfo"
+        }
+      }
+    },
+    "FlightInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "flightDealCarrierName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lastObservedDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "flightDealCarrier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lengthOfStay": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "tripType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "FlightInfoBase": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "flightDealCarrier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lengthOfStay": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "tripType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "FlightPricingInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "flightTotalBaseFare": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "flightTotalTax": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "flightTotalPrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "flightPerPsgrBaseFare": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currencyCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "flightPerPsgrTax": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "flightPerPsgrBaseFarePlusTax": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "flightPerPsgrTotalPrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trendAgcyFlightPrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "pctChangeFromTrend": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelDateRange": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "lengthOfStay": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "travelStartDate": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "integer"
+          }
+        },
+        "travelEndDate": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "HotelDeepLink": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "hotelInfositeUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelDestination": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "associatedMultiCityRegionId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "nonLocalizedCity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "shortName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "regionId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "longName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "province": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tla": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelDetails": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "offerDateRange": {
+          "$ref": "#/definitions/HotelDateRange"
+        },
+        "destination": {
+          "$ref": "#/definitions/HotelDestination"
+        },
+        "hotelInfo": {
+          "$ref": "#/definitions/HotelInfo"
+        },
+        "hotelUrgencyInfo": {
+          "$ref": "#/definitions/HotelUrgencyInfo"
+        },
+        "hotelPricingInfo": {
+          "$ref": "#/definitions/HotelPricingInfo"
+        },
+        "hotelUrls": {
+          "$ref": "#/definitions/HotelURLs"
+        }
+      }
+    },
+    "HotelInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "hotelId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "hotelName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "localizedHotelName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelDestination": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelDestinationRegionID": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "hotelLongDestination": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelStreetAddress": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelCity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelProvince": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelCountryCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelLatitude": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelLongitude": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelStarRating": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelGuestReviewRating": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelReviewTotal": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelImageUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vipAccess": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "isOfficialRating": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelPricingInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "averagePriceValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "totalPriceValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "crossOutPriceValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "originalPricePerNight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "percentSavings": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "drr": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelPricingInfoForPackage": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "hotelPerPsgrBaseRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelPerPsgrTaxesAndFees": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelPerPsgrTotalRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelTotalBaseRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelTotalRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hotelTotalTaxesAndFees": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "drr": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelUrgencyInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "airAttachRemainingTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "numberOfPeopleViewing": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "numberOfPeopleBooked": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "numberOfRoomsLeft": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "lastBookedTime": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "almostSoldStatus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "link": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "airAttachEnabled": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "HotelURLs": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "hotelSearchResultUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hotelInfositeUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "OfferDateRange": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "travelStartDate": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "integer"
+          }
+        },
+        "travelEndDate": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "OfferDestination": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "regionId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "longName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "province": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tla": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "OfferInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "siteID": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "userSelectedCurrency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Offers": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "hotel": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/HotelDetails"
+          }
+        },
+        "flight": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/FlightDetails"
+          }
+        },
+        "package": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/PackageDetails"
+          }
+        }
+      }
+    },
+    "PackageDestination": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "regionID": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "longName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tla": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metroCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "regionID",
+        "longName",
+        "country",
+        "city",
+        "tla",
+        "metroCode"
+      ]
+    },
+    "PackageDetails": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "offerDateRange": {
+          "$ref": "#/definitions/OfferDateRange"
+        },
+        "destination": {
+          "$ref": "#/definitions/PackageDestination"
+        },
+        "origin": {
+          "$ref": "#/definitions/OfferDestination"
+        },
+        "hotelInfo": {
+          "$ref": "#/definitions/HotelInfo"
+        },
+        "hotelPricingInfo": {
+          "$ref": "#/definitions/HotelPricingInfoForPackage"
+        },
+        "flightInfo": {
+          "$ref": "#/definitions/FlightInfoBase"
+        },
+        "flightPricingInfo": {
+          "$ref": "#/definitions/FlightPricingInfo"
+        },
+        "packageInfo": {
+          "$ref": "#/definitions/PackageInfo"
+        },
+        "packagePricingInfo": {
+          "$ref": "#/definitions/PackagePricingInfo"
+        },
+        "packageUrls": {
+          "$ref": "#/definitions/PackageUrls"
+        },
+        "hotelUrgencyInfo": {
+          "$ref": "#/definitions/HotelUrgencyInfo"
+        }
+      }
+    },
+    "PackageInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "brandedDealsIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "PackagePricingInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "perPsgrPackagePrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "totalPackagePrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "perPsgrSavings": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "totalSavings": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currencyCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "percentSavings": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "savingsPctOfHotel": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "savingsPctOfFlight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "PackageUrls": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "packageSearchUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "flightDeeplinks": {
+          "$ref": "#/definitions/FlightDeepLink"
+        },
+        "hotelDeeplinks": {
+          "$ref": "#/definitions/HotelDeepLink"
+        }
+      }
+    },
+    "Persona": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "personaType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "UserInfo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "userId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "persona": {
+          "$ref": "#/definitions/Persona"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "offerInfo": {
+      "$ref": "#/definitions/OfferInfo"
+    },
+    "userInfo": {
+      "$ref": "#/definitions/UserInfo"
+    },
+    "offers": {
+      "$ref": "#/definitions/Offers"
+    }
+  }
+}

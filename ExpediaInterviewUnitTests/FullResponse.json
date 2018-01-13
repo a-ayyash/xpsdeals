@@ -1,0 +1,219 @@
+﻿{
+  "offerInfo": {
+    "siteID": "1",
+    "language": "en_US",
+    "currency": "USD",
+    "userSelectedCurrency": "USD"
+  },
+  "userInfo": {
+    "persona": { "personaType": "OTHERS" },
+    "userId": "foo"
+  },
+  "offers": {
+    "Package": [
+      {
+        "offerDateRange": {
+          "travelStartDate": [ 2018, 2, 10 ],
+          "travelEndDate": [ 2018, 2, 16 ]
+        },
+        "destination": {
+          "regionID": "601906",
+          "longName": "Long Name",
+          "country": "ABC",
+          "city": "city",
+          "tla": "TLA",
+          "metrocode": "SDQ"
+        },
+        "hotelInfo": {
+          "hotelId": "123",
+          "hotelName": "Hotel Name",
+          "localizedHotelName": "اسم الفندق",
+          "hotelDestination": "Hotel Destination",
+          "hotelDestinationRegionID": "2321",
+          "hotelLongDestination": "Hotel Long Destination",
+          "hotelStreetAddress": "Street Address 123",
+          "hotelCity": "Hotel City",
+          "hotelProvince": "Province",
+          "hotelCountryCode": "ABC",
+          "hotelLatitude": 138383839.193939393923,
+          "hotelLongitude": -12.5555,
+          "hotelStarRating": "4.5",
+          "hotelGuestReviewRating": 5.0,
+          "hotelReviewTotal": 4.3,
+          "hotelImageUrl": "https://www.one.com/two.jpg",
+          "vipAccess": true,
+          "isOfficialRating": true 
+        },
+        "hotelPricingInfo": {
+          "hotelPerPsgrBaseRate": 2480.01,
+          "hotelPerPsgrTaxesAndFees": 1.3333,
+          "hotelPerPsgrTotalRate": 2480.01,
+          "hotelTotalBaseRate": 4960.02,
+          "hotelTotalTaxesAndFees": 3.3,
+          "hotelTotalRate": 4960.02,
+          "drr": false
+        },
+        "flightInfo": {
+          "flightDealCarrier": "DL",
+          "lengthOfStay": 6,
+          "tripType": "ROUND_TRIP"
+        },
+        "flightPricingInfo": {
+          "currencyCode": "USD",
+          "flightTotalBaseFare": 926.0,
+          "flightTotalTax": 877.64,
+          "flightTotalPrice": 1803.64,
+          "flightPerPsgrBaseFare": 463.0,
+          "flightPerPsgrTax": 438.82,
+          "flightPerPsgrBaseFarePlusTax": 0.0,
+          "flightPerPsgrTotalPrice": 901.82,
+          "trendAgcyFlightPrice": 0.0,
+          "pctChangeFromTrend": 0.0
+        },
+        "packageInfo": { "brandedDealsIdentifier": "PkgSavingsFlightDeal,PkgSavingsHotelDeal,PkgSavingsFreeFlight,PkgSavingsHighSavingsPercentFromSA,PkgSavingsFreeHotelNights" },
+        "packagePricingInfo": {
+          "currencyCode": "USD",
+          "perPsgrPackagePrice": 1882.0,
+          "totalPackagePrice": 3765.52,
+          "perPsgrSavings": 1499.0,
+          "totalSavings": 2998.14,
+          "percentSavings": 45.0,
+          "savingsPctOfHotel": 60.0,
+          "savingsPctOfFlight": 166.0
+        },
+        "packageUrls": {
+          "packageSearchUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fpackage%2Fsearch%2FFlightHotel%2F2018-02-10%2F2018-02-16%3FFromAirport%3DWAW%26Destination%3DPUJ%26HotelId%3D18919488%26NumAdult%3D2%26DestinationId%3D601906%26dealMarker%3D3-5%2C-1%2C201801130703%2C11%2C10102020%2C3765.52%2C_",
+          "flightDeeplinks": { "flightSearchUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fflight%2Fsearch%2FRoundTrip%2F2018-02-10%2F2018-02-16%3FFromAirport%3DWAW%26ToAirport%3DPUJ%26NumAdult%3D2" },
+          "hotelDeeplinks": { "hotelInfositeUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fhotel%2Finfo%2F18919488%2F2018-02-10%2F2018-02-16" }
+        },
+        "origin": {
+          "regionID": "178317",
+          "longName": "Warsaw,Masovian Voivodeship,POL",
+          "country": "POL",
+          "province": "Masovian Voivodeship",
+          "city": "Warsaw",
+          "tla": "WAW"
+        },
+        "hotelUrgencyInfo": {
+          "airAttachRemainingTime": 0,
+          "numberOfPeopleViewing": 2,
+          "numberOfPeopleBooked": 0,
+          "numberOfRoomsLeft": 15,
+          "lastBookedTime": 1515296962351,
+          "almostSoldStatus": "AVAILABLE",
+          "link": "/Hotel-Search#selected=18919488",
+          "airAttachEnabled": false
+        }
+      }
+    ],
+    "Flight": [
+      {
+        "offerDateRange": {
+          "travelStartDate": [ 2018, 3, 12 ],
+          "travelEndDate": [ 2018, 4, 1 ]
+        },
+        "destination": {
+          "regionID": "178293",
+          "longName": "New York,New York,USA",
+          "country": "USA",
+          "province": "New York",
+          "city": "New York",
+          "tla": "JFK",
+          "metrocode": "NYC",
+          "rank": "41"
+        },
+        "flightInfo": {
+          "flightDealCarrier": "LO",
+          "flightDealCarrierName": "LOT-Polish Airlines",
+          "lastObservedDate": "2018-01-12T13:10:20.075Z",
+          "lengthOfStay": 20,
+          "tripType": "ROUND_TRIP"
+        },
+        "flightPricingInfo": {
+          "currencyCode": "USD",
+          "flightTotalBaseFare": 0.0,
+          "flightTotalTax": 0.0,
+          "flightTotalPrice": 0.0,
+          "flightPerPsgrBaseFare": 517.46,
+          "flightPerPsgrTax": 0.0,
+          "flightPerPsgrBaseFarePlusTax": 517.46,
+          "flightPerPsgrTotalPrice": 517.46,
+          "trendAgcyFlightPrice": 0.0,
+          "pctChangeFromTrend": 0.0
+        },
+        "flightUrls": { "flightSearchUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fflight%2Fsearch%2FRoundTrip%2F2018-03-12%2F2018-04-01%3FFromAirport%3DWAW%26ToAirport%3DJFK%26NumAdult%3D1" },
+        "origin": {
+          "regionID": "178317",
+          "longName": "Warsaw,Masovian Voivodeship,POL",
+          "country": "POL",
+          "province": "Masovian Voivodeship",
+          "city": "Warsaw",
+          "tla": "WAW"
+        }
+      }
+    ],
+    "Hotel": [
+      {
+        "offerDateRange": {
+          "travelStartDate": [ 2018, 5, 16 ],
+          "travelEndDate": [ 2018, 5, 21 ],
+          "lengthOfStay": 5
+        },
+        "destination": {
+          "regionID": "178294",
+          "associatedMultiCityRegionId": "178294",
+          "longName": "Orlando (and vicinity), Florida, United States of America",
+          "shortName": "Orlando",
+          "country": "United States of America",
+          "province": "Florida",
+          "city": "Orlando",
+          "tla": "ORL",
+          "nonLocalizedCity": "Orlando"
+        },
+        "hotelInfo": {
+          "hotelId": "804984",
+          "hotelName": "Westgate Lakes Resort & Spa Universal Studios Area",
+          "localizedHotelName": "Westgate Lakes Resort & Spa Universal Studios Area",
+          "hotelDestination": "Orlando",
+          "hotelDestinationRegionID": "2693",
+          "hotelLongDestination": "Orlando,FL,USA",
+          "hotelStreetAddress": "9500 Turkey Lake Rd",
+          "hotelCity": "Orlando",
+          "hotelProvince": "FL",
+          "hotelCountryCode": "USA",
+          "hotelLatitude": 28.428934,
+          "hotelLongitude": -81.47504,
+          "hotelStarRating": "4.0",
+          "hotelGuestReviewRating": 3.82,
+          "hotelReviewTotal": 7600,
+          "hotelImageUrl": "https://images.trvl-media.com/hotels/1000000/810000/805000/804984/ab33e4c5_t.jpg",
+          "vipAccess": true,
+          "isOfficialRating": false
+        },
+        "hotelUrgencyInfo": {
+          "airAttachRemainingTime": 0,
+          "numberOfPeopleViewing": 404,
+          "numberOfPeopleBooked": 40,
+          "numberOfRoomsLeft": 438,
+          "lastBookedTime": 1515816274835,
+          "almostSoldStatus": "AVAILABLE",
+          "link": "/Hotel-Search#selected=804984",
+          "airAttachEnabled": false
+        },
+        "hotelPricingInfo": {
+          "averagePriceValue": 70.28,
+          "totalPriceValue": 351.4,
+          "crossOutPriceValue": 230.49,
+          "originalPricePerNight": 230.49,
+          "currency": "USD",
+          "percentSavings": 69.51,
+          "drr": false
+        },
+        "hotelUrls": {
+          "hotelInfositeUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fhotel%2Finfo%2F804984%2F2018-05-16%2F2018-05-21",
+          "hotelSearchResultUrl": "https%3A%2F%2Fwww.expedia.com%2Fgo%2Fhotel%2Fsearch%2FDestination%2F2018-05-16%2F2018-05-21%3FSearchType%3DDestination%26CityName%3DOrlando%26RegionId%3D178294%26Selected%3D804984"
+        }
+      }
+    ]
+  }
+}

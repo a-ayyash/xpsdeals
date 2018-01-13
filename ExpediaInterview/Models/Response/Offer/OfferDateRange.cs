@@ -21,7 +21,7 @@ namespace ExpediaInterview.Models
 
 #region PUBLIC_ACCESSORS
 
-        public DateTime TravelStartDate
+        public DateTime? TravelStartDate
         {
             get
             {
@@ -29,7 +29,7 @@ namespace ExpediaInterview.Models
             }
         }
 
-        public DateTime TravelEndDate
+        public DateTime? TravelEndDate
         {
             get
             {

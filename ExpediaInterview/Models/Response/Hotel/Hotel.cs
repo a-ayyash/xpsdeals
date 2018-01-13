@@ -9,7 +9,7 @@ namespace ExpediaInterview.Models.Response.Hotel
     public class HotelInfo
     {
         [DataMember(Name = "hotelId")]
-        public long ID { get; set; }
+        public long? ID { get; set; } = null;
 
         [DataMember(Name = "hotelName")]
         public string Name { get; set; }
@@ -21,7 +21,7 @@ namespace ExpediaInterview.Models.Response.Hotel
         public string Destination { get; set; }
 
         [DataMember(Name = "hotelDestinationRegionID")]
-        public long DestinationRegionID { get; set; }
+        public long? DestinationRegionID { get; set; } = null;
 
         [DataMember(Name = "hotelLongDestination")]
         public string LongDestination { get; set; }
@@ -39,27 +39,27 @@ namespace ExpediaInterview.Models.Response.Hotel
         public string CountryCode { get; set; }
 
         [DataMember(Name = "hotelLatitude")]
-        public double Latitude { get; set; }
+        public double? Latitude { get; set; } = null;
 
         [DataMember(Name = "hotelLongitude")]
-        public double Longitude { get; set; }
+        public double? Longitude { get; set; } = null;
 
         [DataMember(Name = "hotelStarRating")]
-        public double StarRating { get; set; }
+        public double? StarRating { get; set; } = null;
 
         [DataMember(Name = "hotelGuestReviewRating")]
-        public double GuestReviewRating { get; set; }
+        public double? GuestReviewRating { get; set; } = null;
 
         [DataMember(Name = "hotelReviewTotal")]
-        public int ReviewTotal { get; set; }
+        public double? ReviewTotal { get; set; } = null;
 
         [DataMember(Name = "hotelImageUrl")]
         public string ImageUrl { get; set; }
 
         [DataMember(Name = "vipAccess")]
-        public bool VipAccess { get; set; }
+        public bool? VipAccess { get; set; } = null;
 
         [DataMember(Name = "isOfficialRating")]
-        public bool IsOfficialRating { get; set; }
+        public bool? IsOfficialRating { get; set; } = null;
     }
 }

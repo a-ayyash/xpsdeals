@@ -16,7 +16,7 @@ namespace ExpediaInterview.Models.Response.Package
         public OfferDateRange DateRange { get; set; }
 
         [DataMember(Name = "destination")]
-        public FlightDestination Destination { get; set; }
+        public PackageDestination Destination { get; set; }
 
         [DataMember(Name = "origin")]
         public OfferDestination Origin { get; set; }

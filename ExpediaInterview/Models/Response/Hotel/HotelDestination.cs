@@ -11,7 +11,7 @@ namespace ExpediaInterview.Models.Response.Hotel
     public class HotelDestination : OfferDestination
     {
         [DataMember(Name = "associatedMultiCityRegionId")]
-        public long AssociatedMultiCityRegionId { get; set; }
+        public long? AssociatedMultiCityRegionId { get; set; } = null;
 
         [DataMember(Name = "nonLocalizedCity")]
         public string NonLocalizedCity { get; set; }

@@ -14,8 +14,7 @@ namespace ExpediaInterviewUnitTests
         [TestMethod]
         public void TestWrongJSON()
         {
-            DealsJSONSerializer s = new DealsJSONSerializer();
-            var deal = s.ReadDealFromJSON("{}");
+            var deal =  DealsJSONSerializer.ReadDealFromJSON("{}");
 
             Assert.IsFalse(deal.IsValidDeal());
         }
@@ -23,16 +22,14 @@ namespace ExpediaInterviewUnitTests
         [TestMethod]
         public void TestInavlidDealOnEmptyContent()
         {
-            DealsJSONSerializer s = new DealsJSONSerializer();
-            Assert.IsFalse(s.ReadDealFromJSON("").IsValidDeal());
+            Assert.IsFalse(DealsJSONSerializer.ReadDealFromJSON("").IsValidDeal());
         }
 
         [TestMethod]
         public void TestValidJSON()
         {
-            DealsJSONSerializer s = new DealsJSONSerializer();
-            var expectedContent = System.IO.File.ReadAllText("ExpectedSchema.json");
-            var deal = s.ReadDealFromJSON(expectedContent);
+            var expectedContent = System.IO.File.ReadAllText("FullResponse.json");
+            var deal = DealsJSONSerializer.ReadDealFromJSON(expectedContent);
 
             Assert.IsTrue(deal.IsValidDeal());
         }
@@ -40,12 +37,10 @@ namespace ExpediaInterviewUnitTests
         [TestMethod]
         public void TestSerialization()
         {
-            DealsJSONSerializer s = new DealsJSONSerializer();
             var expectedContent = System.IO.File.ReadAllText("ExpectedSchema.json");
-            var deal = s.ReadDealFromJSON(expectedContent);
+            var deal = DealsJSONSerializer.ReadDealFromJSON(expectedContent);
 
             Assert.IsTrue(string.Equals(deal.User.UserID, "awesome_user_ID"));
-            //Assert.AreEqual(deal.Hotels[0].Hotel.ID, 10980182);
             Assert.AreEqual(deal.OfferDetails.SiteID, 42);
         }
     }

@@ -10,11 +10,8 @@ namespace ExpediaInterview.REST
     {
         public static Deal GetDeal(string url)
         {
-            RESTOperator RESTRequest = new RESTOperator();
-            DealsJSONSerializer serializer = new DealsJSONSerializer();
-
-            return serializer.ReadDealFromJSON(
-                RESTRequest.GETContent(url));
+            return DealsJSONSerializer.ReadDealFromJSON(
+                RESTOperator.GETContent(url));
         }
     }
 }

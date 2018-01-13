@@ -14,6 +14,6 @@ namespace ExpediaInterview.Models.Response.Flight
         public string MetroCode { get; set; }
 
         [DataMember(Name = "rank")]
-        public int Rank { get; set; }
+        public int? Rank { get; set; } = null;
     }
 }

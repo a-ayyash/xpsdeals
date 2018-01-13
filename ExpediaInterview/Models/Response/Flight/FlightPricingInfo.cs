@@ -10,33 +10,33 @@ namespace ExpediaInterview.Models.Response.Flight
     public class FlightPricingInfo
     {
         [DataMember(Name = "flightTotalBaseFare")]
-        public double FlightTotalBaseFare { get; set; }
+        public double? FlightTotalBaseFare { get; set; } = null;
 
         [DataMember(Name = "flightTotalTax")]
-        public double FlightTotalTax { get; set; }
+        public double? FlightTotalTax { get; set; } = null;
 
         [DataMember(Name = "flightTotalPrice")]
-        public double FlightTotalPrice { get; set; }
+        public double? FlightTotalPrice { get; set; } = null;
 
         [DataMember(Name = "flightPerPsgrBaseFare")]
-        public double FlightPerPsgrBaseFare { get; set; }
+        public double? FlightPerPsgrBaseFare { get; set; } = null;
 
         [DataMember(Name = "currencyCode")]
         public string Currency { get; set; }
 
         [DataMember(Name = "flightPerPsgrTax")]
-        public double FlightPerPsgrTax { get; set; }
+        public double? FlightPerPsgrTax { get; set; } = null;
 
         [DataMember(Name = "flightPerPsgrBaseFarePlusTax")]
-        public double FlightPerPsgrBaseFarePlusTax { get; set; }
+        public double? FlightPerPsgrBaseFarePlusTax { get; set; } = null;
 
         [DataMember(Name = "flightPerPsgrTotalPrice")]
-        public double FlightPerPsgrTotalPrice { get; set; }
+        public double? FlightPerPsgrTotalPrice { get; set; } = null;
 
         [DataMember(Name = "trendAgcyFlightPrice")]
-        public double TrendAgcyFlightPrice { get; set; }
+        public double? TrendAgencyFlightPrice { get; set; } = null;
 
         [DataMember(Name = "pctChangeFromTrend")]
-        public double ChangeFromTrendPercentage { get; set; }
+        public double? ChangeFromTrendPercentage { get; set; } = null;
     }
 }

@@ -13,7 +13,7 @@ namespace ExpediaInterview.Models.Response.Flight
         public string FlightCarrierShortName { get; set; }
 
         [DataMember(Name = "lengthOfStay")]
-        public int LengthOfStay { get; set; }
+        public int? LengthOfStay { get; set; } = null;
 
         [DataMember(Name = "tripType")]
         public string TripType { get; set; }
@@ -26,6 +26,6 @@ namespace ExpediaInterview.Models.Response.Flight
         public string FlightCarrierName { get; set; }
 
         [DataMember(Name = "lastObservedDate")]
-        public DateTime LastObservedDate { get; set; }
+        public DateTime? LastObservedDate { get; set; } = null;
     }
 }

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ExpediaInterview.Models.Response.Offer;
 using System.Runtime.Serialization;
-using System.Text;
 
-namespace ExpediaInterview.Models.Response.Offer
+namespace ExpediaInterview.Models.Response.Package
 {
-    [DataContract(Name = "destination")]
-    public class OfferDestination
+    public class PackageDestination 
     {
         [DataMember(Name = "regionId")]
         public long? RegionID { get; set; } = null;
@@ -17,13 +14,13 @@ namespace ExpediaInterview.Models.Response.Offer
         [DataMember(Name = "country")]
         public string Country { get; set; }
 
-        [DataMember(Name = "province")]
-        public string Province { get; set; }
-
         [DataMember(Name = "city")]
         public string City { get; set; }
 
         [DataMember(Name = "tla")]
         public string TLA { get; set; }
+
+        [DataMember(Name = "metrocode")]
+        public string MetroCode { get; set; }
     }
 }

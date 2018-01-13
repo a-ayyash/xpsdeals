@@ -12,7 +12,7 @@ namespace ExpediaInterview.REST
 {
     public class DealsJSONSerializer
     {
-        public Deal ReadDealFromJSON(string content)
+        public static Deal ReadDealFromJSON(string content)
         {
             if (String.IsNullOrEmpty(content))
             {

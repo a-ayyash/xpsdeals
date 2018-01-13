@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ExpediaInterview.Models
 {
-    enum Personas
+    public enum Personas
     {
         NONE,
         OTHERS,
@@ -36,9 +36,7 @@ namespace ExpediaInterview.Models
                 {
                     throw new FormatException("Invalid Persona In User Info");
                 }
-
             }
         }
-
     }
 }

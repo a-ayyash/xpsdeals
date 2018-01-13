@@ -26,9 +26,8 @@ namespace ExpediaInterviewUnitTests
         [TestMethod]
         public void TestURLReturnsValidJSON()
         {
-            var op = new RESTOperator();
             string expectedSchema = System.IO.File.ReadAllText("ExpectedSchema.json");
-            var content = op.GETContent(URL);
+            var content = RESTOperator.GETContent(URL);
             JObject response = JObject.Parse(content);
             JSchema schema = JSchema.Parse(expectedSchema);
             Assert.IsTrue(response.IsValid(schema));

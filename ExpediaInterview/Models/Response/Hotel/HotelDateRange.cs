@@ -10,6 +10,6 @@ namespace ExpediaInterview.Models.Response.Hotel
     public class HotelDateRange : OfferDateRange
     {
         [DataMember(Name = "lengthOfStay")]
-        public int LengthOfStay { get; set; }
+        public int? LengthOfStay { get; set; } = null;
     }
 }
