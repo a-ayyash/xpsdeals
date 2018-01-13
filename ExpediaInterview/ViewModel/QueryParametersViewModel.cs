@@ -10,16 +10,18 @@ namespace ExpediaInterview.ViewModel
     public class QueryParametersViewModel
     {
         [Required]
+        [StringLength(60, MinimumLength = 3)]
         public string Scenario { get; set; }
 
         [Required]
+        [StringLength(60, MinimumLength = 3)]
         public string Page { get; set; }
 
         [Required]
+        [StringLength(60, MinimumLength = 3)]
         public string Uid { get; set; }
 
         public string ProductType { get; set; }
-
         public string DestinationName { get; set; }
         public string DestinationCity { get; set; }
         public string MinTripStartDate { get; set; }

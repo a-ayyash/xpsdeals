@@ -3,38 +3,39 @@
 @{
     ViewData["Title"] = "Index";
     var deal = (ExpediaInterview.Models.Deal)ViewData["deal"];
-    var defaults = (ExpediaInterview.ViewModel.QueryParametersViewModel)ViewData["defaultParams"];
 }
 
 
 
 
-<div asp-validation-summary="All"></div>
-<form asp-controller="Deals" asp-action="RequestDeals" method="post">
+<form asp-controller="Deals" asp-action="Index" method="post">
     <table class="table">
         <tbody>
             <tr>
                 <td>
-                    Scenario:
+                    Scenario(*):
+                    <span asp-validation-for="Scenario" class="text-danger"></span>
                 </td>
                 <td>
-                    <input asp-for="Scenario" value="@(defaults.Scenario)"/> <br />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Page:
-                </td>
-                <td>
-                    <input asp-for="Page" value="@(defaults.Page)"/> <br />
+                    <input asp-for="Scenario" /> <br />
                 </td>
             </tr>
             <tr>
                 <td>
-                    User ID:
+                    Page(*):
+                    <span asp-validation-for="Page" class="text-danger"></span>
                 </td>
                 <td>
-                    <input asp-for="Uid" value="@(defaults.Uid)"/> <br />
+                    <input asp-for="Page" /> <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    User ID(*):
+                    <span asp-validation-for="Uid" class="text-danger"></span>
+                </td>
+                <td>
+                    <input asp-for="Uid" /> <br />
                 </td>
             </tr>
             <tr>
@@ -64,6 +65,7 @@
             <tr>
                 <td>
                     Minimum Trip Start Date (format: 2017-05-03):
+                    <span asp-validation-for="MinTripStartDate" class="text-danger"></span>
                 </td>
                 <td>
                     <input asp-for="MinTripStartDate" /> <br />

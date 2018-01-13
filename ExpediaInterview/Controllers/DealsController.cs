@@ -14,23 +14,30 @@ namespace ExpediaInterview.Controllers
     public class DealsController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index(string url)
+        public IActionResult Index()
         {
-            if (!string.IsNullOrEmpty(url))
+            var url = TempData["url"];
+
+            if (url != null && !string.IsNullOrEmpty(url.ToString()))
             {
-                ViewData["deal"] = RequestManager.GetDeal(url);
+                ViewData["deal"] = RequestManager.GetDeal(url.ToString());
             }
-
-            ViewData["defaultParams"] = QueryParametersViewModel.GetDefaults();
-
 
             return View();
         }
 
-        public IActionResult RequestDeals(QueryParametersViewModel viewModel)
+        [HttpPost]
+        public IActionResult Index(
+            [Bind("Scenario,Page,Uid")] QueryParametersViewModel viewModel)
         {
-            var viewUrl = TargetURL.GenerateURL(viewModel.ToDictionary());
-            return RedirectToAction("Index", new { url = viewUrl });
+            if (ModelState.IsValid)
+            {
+                var viewUrl = TargetURL.GenerateURL(viewModel.ToDictionary());
+                TempData["url"] = viewUrl;
+                return RedirectToAction("Index");
+            }
+
+            return View(viewModel);
         }
 
         public IActionResult About()
