@@ -145,7 +145,7 @@
 @if (deal == null)
 {
     <p>
-        NO DEALS TO SHOW
+        Please Fill The Parameters To Generate A Deal
     </p>
 
 }
@@ -228,13 +228,13 @@ else if(deal.IsValidDeal())
                 </thead>
                 <tbody>
                     @foreach (var hotel in deal.OfferCollections.Hotels)
-        {
+                    {
                         <tr>
                             <td>
-                                @hotel.DateRange.TravelStartDate.ToLongDateString()
+                                @(hotel.DateRange.TravelStartDate != null ? hotel.DateRange.TravelStartDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
-                                @hotel.DateRange.TravelEndDate.ToLongDateString()
+                                @(hotel.DateRange.TravelEndDate != null ? hotel.DateRange.TravelEndDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
                                 @hotel.DateRange.LengthOfStay
@@ -285,10 +285,10 @@ else if(deal.IsValidDeal())
     {
                         <tr>
                             <td>
-                                @flight.DateRange.TravelStartDate.ToLongDateString()
+                                @(flight.DateRange.TravelStartDate != null ? flight.DateRange.TravelStartDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
-                                @flight.DateRange.TravelEndDate.ToLongDateString()
+                                @(flight.DateRange.TravelEndDate != null ? flight.DateRange.TravelEndDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
                                 @flight.Origin.City
@@ -340,10 +340,10 @@ else if(deal.IsValidDeal())
 {
                         <tr>
                             <td>
-                                @package.DateRange.TravelStartDate.ToLongDateString()
+                                @(package.DateRange.TravelStartDate != null ? package.DateRange.TravelStartDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
-                                @package.DateRange.TravelEndDate.ToLongDateString()
+                                @(package.DateRange.TravelEndDate != null ? package.DateRange.TravelEndDate.Value.ToString("yyyy-MM-dd") : "n/a")
                             </td>
                             <td>
                                 @package.Origin.City
@@ -378,5 +378,5 @@ else if(deal.IsValidDeal())
 </div>
 }
 else {
-<p> INVALID DEAL </p>
+<p> No Deals To Show </p>
 }

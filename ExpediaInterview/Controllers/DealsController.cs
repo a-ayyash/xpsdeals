@@ -27,8 +27,7 @@ namespace ExpediaInterview.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(
-            [Bind("Scenario,Page,Uid")] QueryParametersViewModel viewModel)
+        public IActionResult Index(QueryParametersViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
