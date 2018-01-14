@@ -1,5 +1,5 @@
 
-[![Build Status](https://api.travis-ci.org/a-ayyash/xpdealfinder.png)](https://travis-ci.org/a-ayyash/xpdealfinder)
+[![Build Status](https://travis-ci.org/a-ayyash/xpsdeals.svg?branch=master)](https://travis-ci.org/a-ayyash/xpsdeals)
 
 ## Run 
 
@@ -21,4 +21,4 @@
 1. Push to the github repository.
 2. Travis CI is notified and a build starts
 3. Travis CI runs tests
-4. Travis CI Deploys to [heroku](https://xpdealsfinder.herokuapp.com/)
+4. Travis CI Deploys to [heroku](https://xpsdealsfinder.herokuapp.com/)
