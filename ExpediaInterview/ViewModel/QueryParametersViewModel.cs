@@ -109,9 +109,15 @@ namespace ExpediaInterview.ViewModel
         [Display(Name = "Max Total Rating")]
         public string MaxTotalRate { get; set; }
 
+        public string CustomParameterName { get; set; }
+        public string CustomParameterValue { get; set; }
+
 
         public IDictionary<string, string> ToDictionary()
         {
+            string customName = "";
+            string customValue = "";
+            bool customPairComplete = false;
             Dictionary<string, string> paramsDictionary = new Dictionary<string, string>();
             PropertyInfo[] properties = typeof(QueryParametersViewModel).GetProperties();
             foreach (var property in properties)
@@ -121,6 +127,34 @@ namespace ExpediaInterview.ViewModel
 
                 if (value == null)
                 {
+                    continue;
+                }
+
+                if (string.Equals(name, "CustomParameterName"))
+                {
+                    customName = value.ToString();
+                    customPairComplete = !string.IsNullOrEmpty(customValue);
+
+                    if (!customPairComplete)
+                    {
+                        continue;
+                    }
+                }
+
+                if (string.Equals(name, "CustomParameterValue"))
+                {
+                    customValue = value.ToString();
+                    customPairComplete = !string.IsNullOrEmpty(customName);
+
+                    if (!customPairComplete)
+                    {
+                        continue;
+                    }
+                }
+
+                if (customPairComplete)
+                {
+                    paramsDictionary.Add(char.ToLower(customName[0]) + customName.Substring(1), customValue.ToString());
                     continue;
                 }
 
