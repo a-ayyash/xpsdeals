@@ -32,7 +32,7 @@ The reasons are grouped into two groups Selfish, and Technical. For irony's sake
 
 Now don't get me wrong, I have a fair background in dynamic scripting langauges (Ruby, Elixir) and as there is a certain beauty there and all the following points can be made to happen in them. For Selfish reasons I prefer the safety of built in Type Safe, Compiled, Easily tracable/debuggable languages. 
 
-Elixir/Pheonix is next to learn. 
+Elixir/Pheonix is next to learn. It's absolutly beautiful.
 
 ## Lessons Learned:
 
