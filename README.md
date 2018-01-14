@@ -1,5 +1,5 @@
 
-[![Build Status](https://api.travis-ci.org/a-ayyash/xpdealfinder.png)](https://travis-ci.org/a-ayyash/xpdealfinder)
+[![Build Status](https://travis-ci.org/a-ayyash/xpsdeals.svg?branch=master)](https://travis-ci.org/a-ayyash/xpsdeals)
 
 ## Run 
 
